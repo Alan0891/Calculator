@@ -1,0 +1,35 @@
+<div class="container">
+<div class="row clearfix">
+    <div class="col-sm-12 col-md-6 col-lg-6 float-left d-flex justify-content-center mb-5">
+        <div class="card mt-4 border-0">
+            <div class="card-body">
+                <h1 class="card-title text-danger" style="margin: 0;padding: 0;font-weight:bold;font-family: 'Raleway', sans-serif;">Calculator 2000</h1>
+                <h4 class="card-subtitle text-warning" style="margin: 0;padding: 0;font-family: 'Raleway', sans-serif;">Calculadora básica</h4>
+                <p class="card-text" style="font-family: 'Yanone Kaffeesatz', sans-serif;">
+                Esta é uma calculadora básica desenvolvida utilizando PHP , Javascript, Bootstrap para fins didáticos.<br>
+                Como usar : para realizar operções diferentes você deve sempre encerrar a anterior com  " - " , exemplo: 1 + 1 = 2 * 2 = 4 .
+                </p>
+            </div>
+        </div>
+    </div>
+  <div class="col-sm-12 col-md-6 col-lg-6 float-right d-flex justify-content-center mb-5">
+             <div class="card mt-4 mb-4 bg-dark" style="width: 17rem;">
+             <div class="card-body text-center p-4"> 
+             <p style="margin: 0;padding: 0;text-align: end;color: #ccc;font-family: 'Yanone Kaffeesatz', sans-serif;font-size: 14pt;">Calculator</p>    
+             <input id="display" type="text" style="text-align: end;font-family: 'Audiowide', cursive;font-size: 12pt;" class="form-control form-control-lg col-12 mt-5 mb-5" readonly>
+             <hr style="background-color: #ccc;">
+             <button id="c" class="btn btn-md btn-danger p-3 m-1" style="border: 1px solid #ccc;">C</button>
+             <?php for($i=9;$i >= 0;$i--):?>
+               <button id="<?= $i;?>" class="btn btn-md btn-dark p-3 m-1" style="border: 1px solid #ccc;font-weight: bold;"><?= $i;?></button>
+             <?php endfor?>
+             <button id="-" class="btn btn-md btn-dark p-3 m-1" style="border: 1px solid #ccc;">-</button>
+             <button id="/" class="btn btn-md btn-dark p-3 m-1" style="border: 1px solid #ccc;">/</button>
+             <button id="*" class="btn btn-md btn-dark p-3 m-1" style="border: 1px solid #ccc;">*</button>
+             <button id="+" class="btn btn-md btn-dark p-3 m-1" style="border: 1px solid #ccc;">+</button>
+             <button id="=" class="btn btn-md btn-warning p-3 m-1" style="border: 1px solid #ccc;">=</button>
+            
+          </div>
+      </div>
+  </div>
+  </div>
+</div>

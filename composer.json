@@ -1,0 +1,22 @@
+{
+    "name": "acesar/calculator",
+    "description": "Calculadora",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alan Cesar",
+            "email": "artgio32@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+            "src\\":"src/"
+        },
+        "files": [
+            "config.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
